@@ -1,11 +1,15 @@
 function declaration() {
-  function innerFunctionOfDeclaration() {
+  var nestedVariable1 = ''
 
+  function innerFunctionOfDeclaration() {
+    var nestedVariable2 = ''
   }
 }
 
 var expression = function() {
-  function innerFunctionOfExpression() {
+  var nestedVariable3 = ''
 
+  function innerFunctionOfExpression() {
+    var nestedVariable4 = ''
   }
 }
