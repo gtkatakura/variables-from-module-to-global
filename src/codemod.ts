@@ -10,10 +10,10 @@ function transform(file: FileInfo, api: API, options: Options) {
   }
 
   root
-    .find(j.Identifier)
+    .find(j.VariableDeclarator)
     .forEach(path => {
-      if (path.scope.isGlobal) {
-        defineGlobal(path.value.name)
+      if (path.parentPath.scope.isGlobal) {
+        defineGlobal(path.value.id.name)
       }
     })
 

@@ -11,5 +11,9 @@ var expression = function() {
 
   function innerFunctionOfExpression() {
     var nestedVariable4 = ''
+
+    anotherGlobalFunction('x')
   }
 }
+
+var jQuery = $
