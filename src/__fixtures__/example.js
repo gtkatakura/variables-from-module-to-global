@@ -9,5 +9,3 @@ var expression = function() {
 
   }
 }
-global.expression = expression
-global.declaration = declaration
